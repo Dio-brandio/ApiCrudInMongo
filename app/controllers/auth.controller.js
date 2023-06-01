@@ -5,21 +5,21 @@ const bcrypt = require('bcrypt');
 const dotenv = require("dotenv");
 dotenv.config()
 
-async function CheckLoginCrendentials(req,res) {
+async function Authenticate(req,res) {
     try {
         const {email,password} = req.body
-        if (!email || !password || !req.body) {
+        if (!email || !password || !req.body) {0
             return res.status(StatusCode.BadRequest).json({message:"Badrequest",ok:false})
         }
         const IsUser = await userservice.FindUserByEmail(email)
         if (IsUser===null) {
-            return res.status(StatusCode.BadRequest).json({message:"Badrequest",ok:false})
+            return res.status(StatusCode.BadRequest).json({message:"Invalid Credentials",ok:false})
         }
 
         const IsCorrectPassword =await bcrypt.compare(password.toString(),IsUser.password.toString());
 
         if (!IsCorrectPassword) {
-            return res.status(StatusCode.BadRequest).json({message:"Badrequest",ok:false});
+            return res.status(StatusCode.BadRequest).json({message:"Invalid Credentials",ok:false});
         }
 
         const userCredentials ={
@@ -43,4 +43,4 @@ async function RegisterUser(req,res) {
     
 }
 
-module.exports = { CheckLoginCrendentials,RegisterUser}
+module.exports = { Authenticate,RegisterUser}
