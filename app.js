@@ -1,10 +1,11 @@
 
 const express= require('express')
 const app = express()
+const port = 4000
+require("dotenv").config();
 const usersRouter =require('./app/routes/user.routes.js') ;
 const authRouter =require('./app/routes/auth.routes.js') ;
-const port = 4000
-const con = require("./config/dbconfig.js");
+require("./config/dbconfig.js");
 
 
 //db connnectiom

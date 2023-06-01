@@ -2,8 +2,7 @@ const StatusCode = require("../constraints/response-codes")
 const userservice = require("../service/user.service")
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
-const dotenv = require("dotenv");
-dotenv.config()
+
 
 async function Authenticate(req,res) {
     try {
@@ -40,7 +39,19 @@ async function Authenticate(req,res) {
 
 
 async function RegisterUser(req,res) {
-    
+    try {
+        const {email} = req.body
+        if (!email || !req.body) {
+            return res.status(StatusCode.BadRequest).json({message:"Badrequest",ok:false})
+        }
+       
+        const IsInserted = await userservice.InsertUser(req.body)
+        const message  =IsInserted?"Inserted Sucessfully":"Email cant be sused";
+
+    } catch (error) {
+        return res.status(StatusCode.InternalServer).json({message:error.message,ok:false});
+        
+    }
 }
 
 module.exports = { Authenticate,RegisterUser}
