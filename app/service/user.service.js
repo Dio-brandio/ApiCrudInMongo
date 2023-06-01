@@ -1,4 +1,6 @@
 const User = require('../models/User')
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 const GetAllUsers = async () => {
     try {
@@ -21,6 +23,8 @@ const InsertUser = async (userinfo) => {
         if (isUser !== null) {
             return false;
         } else {
+            const hashedpassword = await bcrypt.hash(userinfo.password, saltRounds)
+            userinfo.password = hashedpassword;
             const newUser = new User(userinfo);
             await newUser.save();
             return true;
@@ -33,21 +37,23 @@ const InsertUser = async (userinfo) => {
 
 const FindUserByEmail = async (email) => {
     try {
-        const isUser = await User.find({ email: email });
-        if (isUser.length > 0) {
-            return isUser
-        } else {
-            return null
-        }
+        const UserWithEmail = await User.findOne({ email: email });
+        return UserWithEmail
     } catch (error) {
         throw error;
-        
+
     }
 }
 
 const DeleteUserById = async (userid) => {
     try {
-        const response = await User.findByIdAndRemove(userid)
+        const isUser = await GetUserById(userid);
+
+        if (isUser !== null) {
+            const response = await User.findByIdAndRemove(userid)
+            return true;
+        }
+        return false;
     }
     catch (err) {
         throw err;
@@ -57,10 +63,17 @@ const DeleteUserById = async (userid) => {
 }
 const UpdateUserById = async (userid, userinfo) => {
     try {
-        const response = await User.findByIdAndUpdate(userid, userinfo)
+        const isUser = await GetUserById(userid);
+
+        if (isUser !== null) {
+            const response = await User.findByIdAndUpdate(userid, userinfo)
+            return true;
+        }
+        return false;
+
     }
     catch (err) {
         throw err;
     }
 }
-module.exports = { GetAllUsers, GetUserById, InsertUser, DeleteUserById, UpdateUserById }
+module.exports = { GetAllUsers, GetUserById, InsertUser, DeleteUserById, UpdateUserById, FindUserByEmail }
