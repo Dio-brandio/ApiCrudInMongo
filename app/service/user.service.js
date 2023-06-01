@@ -41,6 +41,7 @@ const FindUserByEmail = async (email) => {
         }
     } catch (error) {
         throw error;
+        
     }
 }
 
