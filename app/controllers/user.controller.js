@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 async function GetUsers(req, res) {
     try {
         const ListOfAllUsers = await userservices.GetAllUsers();
+       
         return res.status(StatusCode.OK).json({ users: ListOfAllUsers, ok: true })
     } catch (err) {
         return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
@@ -14,7 +15,7 @@ async function GetUsers(req, res) {
 
 async function GetUser(req, res) {
     try {
-        if (!await CheckValidId(req, res)) {
+        if (!CheckValidId(req, res)) {
             return res.status(StatusCode.ResourceNotFound).json({ users: "Not found", ok: true })
         }
         const userid = req.params.userid;
@@ -50,7 +51,7 @@ async function CreateUser(req, res) {
 async function DeleteUser(req, res) {
     try {
 
-        if (!await CheckValidId(req, res)) {
+        if (!CheckValidId(req, res)) {
             return res.status(StatusCode.ResourceNotFound).json({ users: "Not found", ok: true })
         }
         const userid = req.params.userid;
@@ -66,7 +67,7 @@ async function DeleteUser(req, res) {
 
 async function UpdateUser(req, res) {
     try {
-        if (!await CheckValidId(req, res)) {
+        if (!CheckValidId(req, res)) {
             return res.status(StatusCode.ResourceNotFound).json({ users: "Not found", ok: true })
         }
         if (!req.body) {
@@ -82,7 +83,7 @@ async function UpdateUser(req, res) {
     }
 }
 
-async function CheckValidId(req, res) {
+ function CheckValidId(req, res) {
     const userid = req.params.userid;
     const isValidId = mongoose.Types.ObjectId.isValid(userid)
     if (!isValidId) {

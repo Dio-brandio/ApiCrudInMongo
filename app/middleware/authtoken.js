@@ -8,10 +8,11 @@ async function CheckCookie(req, res, next) {
     if (!token || token === undefined || token === null) {
         return res.status(StatusCode.BadRequest).json({ message: "Badrequest", ok: false })
     }
-    jwt.verify(token, process.env.JWT_SECRET, (err, verifiedJwt) => {
+    jwt.verify(token, process.env.JWT_SECRET, (err, data) => {
         if (err) {
             return res.status(StatusCode.Unauthorized).json({ message: "Unuthorized", ok: false })
         } else {
+            req.userData =data;
             next()
         }
     })
