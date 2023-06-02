@@ -1,0 +1,189 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CrudTask",
+    "dateExported": "2023-06-02T09:39:25.759Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "aa5df966-b803-4116-bece-64de32dbc93b",
+            "name": "auth",
+            "containerId": "",
+            "created": "2023-06-02T09:19:45.952Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "user",
+            "containerId": "",
+            "created": "2023-06-02T09:20:06.944Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "c3f485c7-69ba-4d97-9b4e-a0100a960a93",
+            "name": "actor",
+            "containerId": "",
+            "created": "2023-06-02T09:20:26.928Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "df3fe93f-5a2c-4a42-8372-220368d55965",
+            "name": "movie",
+            "containerId": "",
+            "created": "2023-06-02T09:20:55.519Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ce66851d-b611-4df6-a09c-407c84a28286",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "FetchAllUsers",
+            "url": "localhost:4000/user/allusers",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-01T04:46:06.011Z",
+            "modified": "2023-06-02T09:20:09.346Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "309786fd-557a-441a-9e7b-06e8eadf5141",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "aa5df966-b803-4116-bece-64de32dbc93b",
+            "name": "Login",
+            "url": "localhost:4000/auth/login/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-01T08:56:28.619Z",
+            "modified": "2023-06-02T09:19:51.082Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"sanjay2@gmail.com\",\n  \"password\":123\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b8a7b044-b18c-46ca-95db-d298b408d829",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "c3f485c7-69ba-4d97-9b4e-a0100a960a93",
+            "name": "ActorInsert",
+            "url": "localhost:4000/actor/new",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-02T07:15:50.900Z",
+            "modified": "2023-06-02T09:20:28.738Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Joseph Joestart\",\n  \"gender\": \"male\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "020cedec-50c3-4c04-9205-d9e32bf0dd9a",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "FetchSingleUser",
+            "url": "localhost:4000/user/647827e4366c5ecce74c3edc",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-01T04:46:14.905Z",
+            "modified": "2023-06-02T09:20:11.034Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "eb6bd32c-4ca0-4915-aef5-298089405a1d",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "aa5df966-b803-4116-bece-64de32dbc93b",
+            "name": "Register",
+            "url": "localhost:4000/auth/register/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-01T09:07:41.633Z",
+            "modified": "2023-06-02T09:19:53.210Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Sanjay Nagar\",\n  \"email\": \"sanjay3@gmail.com\",\n  \"password\": \"123\",\n  \"address\": \"ncie\",\n  \"contact\": \"7878788778\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f70ad55c-e907-40cc-85cc-cb5f29e8074f",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "NewUser",
+            "url": "localhost:4000/user/new",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-01T05:02:00.176Z",
+            "modified": "2023-06-02T09:20:12.458Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Sanjay Nagar\",\n  \"email\": \"sanjay69@gmail.com\",\n  \"password\": \"123\",\n  \"address\": \"ncie\",\n  \"contact\": \"7878788778\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89147c4e-4b3c-4c93-a585-a31f3f5102c5",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "DeleteUser",
+            "url": "localhost:4000/user/delete/64782818381ade24fc56dc40",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-06-01T05:42:26.430Z",
+            "modified": "2023-06-02T09:20:13.778Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a7d9dcc2-66d9-4973-a1c5-84b9abd56c92",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
+            "name": "UpdateUser",
+            "url": "localhost:4000/user/update/6478355baeebce2ed9620821",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-01T06:05:55.179Z",
+            "modified": "2023-06-02T09:20:14.858Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Sanjay Nagar\",\n  \"email\": \"sanjay3@gmail.com\",\n  \"password\": \"457878\",\n  \"address\": \"khatara nagar\",\n  \"contact\": \"6969696969\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c34c95af-c805-4d03-ab45-65402ed1acf0",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "df3fe93f-5a2c-4a42-8372-220368d55965",
+            "name": "GetMovies",
+            "url": "localhost:4000/movie/allmovies",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-06-02T09:21:07.183Z",
+            "modified": "2023-06-02T09:27:52.839Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
