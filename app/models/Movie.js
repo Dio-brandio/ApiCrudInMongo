@@ -3,7 +3,6 @@ const MovieSchema = mongoose.Schema(
     {
         name: String,
         release_date: Date,
-        actors_id: [{ type: mongoose.Types.ObjectId, ref: 'actor' }]
     },
     { timestamps: true }
 );

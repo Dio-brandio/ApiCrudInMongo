@@ -1,6 +1,7 @@
 const userservices= require("../service/user.service")
 const StatusCode = require("../constraints/response-codes")
 const mongoose = require('mongoose');
+const { CheckValidId } = require("../utils/ObjectIdHelper");
 
 
 async function GetUsers(req, res) {
@@ -15,10 +16,10 @@ async function GetUsers(req, res) {
 
 async function GetUser(req, res) {
     try {
-        if (!CheckValidId(req, res)) {
+        const userid = req.params.userid;
+        if (!CheckValidId(userid)) {
             return res.status(StatusCode.ResourceNotFound).json({ users: "Not found", ok: true })
         }
-        const userid = req.params.userid;
 
         const SelectedUser = await userservices.GetUserById(userid);
 
@@ -83,13 +84,5 @@ async function UpdateUser(req, res) {
     }
 }
 
- function CheckValidId(req, res) {
-    const userid = req.params.userid;
-    const isValidId = mongoose.Types.ObjectId.isValid(userid)
-    if (!isValidId) {
-        return false
-    }
-    return true
-}
 
 module.exports = { GetUsers, GetUser, CreateUser, DeleteUser, UpdateUser }
