@@ -8,6 +8,7 @@ const userroutes =require('./app/routes/user.routes.js') ;
 const authroutes =require('./app/routes/auth.routes.js') ;
 const actorroutes =require('./app/routes/actor.routes.js') ;
 const movieroutes =require('./app/routes/movie.routes.js') ;
+const exerciseroutes =require('./app/routes/exercise.routes.js') ;
 const { CheckCookie } = require('./app/middleware/authtoken.js');
 require("./config/dbconfig.js");
 
@@ -26,6 +27,7 @@ app.use('/user',CheckCookie ,userroutes);
 app.use('/actor' ,actorroutes);
 app.use('/auth', authroutes);
 app.use('/movie', movieroutes);
+app.use('/exercise', exerciseroutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
