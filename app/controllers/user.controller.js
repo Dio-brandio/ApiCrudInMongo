@@ -1,13 +1,14 @@
-const userservices= require("../service/user.service")
+const userservices = require("../service/user.service")
 const StatusCode = require("../constraints/response-codes")
-const mongoose = require('mongoose');
 const { CheckValidId } = require("../utils/ObjectIdHelper");
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
 
 async function GetUsers(req, res) {
     try {
         const ListOfAllUsers = await userservices.GetAllUsers();
-       
+
         return res.status(StatusCode.OK).json({ users: ListOfAllUsers, ok: true })
     } catch (err) {
         return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
@@ -85,4 +86,69 @@ async function UpdateUser(req, res) {
 }
 
 
-module.exports = { GetUsers, GetUser, CreateUser, DeleteUser, UpdateUser }
+//password reset logic
+
+async function SendPasswordResetLink(req, res) {
+    try {
+
+        const IsUser = await userservices.FindUserByEmail(req.userData.email);
+        if (IsUser === null) {
+
+            return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+        }
+        const emailtoken = jwt.sign({ email: IsUser.email }, process.env.JWT_SECRET)
+        const link = await userservices.SendMail(IsUser.email, `http://localhost:4000/user/passwordreset/${emailtoken}`);
+        return res.status(StatusCode.OK).json({ link })
+    } catch (err) {
+
+        return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+
+    }
+}
+
+async function CheckPasswordResetUser(req, res) {
+    try {
+        return res.status(StatusCode.OK).json({ ok: true, message: "Resetpage" })
+    } catch (err) {
+
+        return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+
+    }
+}
+
+async function ResetPassword(req, res) {
+    try {
+        const emailtoken = req.params.token;
+
+        if (!emailtoken || emailtoken === null) return res.status(StatusCode.BadRequest).json({ message: "Badrequest", ok: false })
+
+        const { email } = jwt.verify(emailtoken, process.env.JWT_SECRET)
+
+        if (email !== req.userData.email) return res.status(StatusCode.Unauthorized).json({ message: "Unauthorized", ok: false })
+
+        const IsUser = await userservices.FindUserByEmail(email);
+        if (IsUser === null) {
+            return res.status(StatusCode.BadRequest).json({ message: "Badrequest", ok: false })
+        }
+
+        const hashedpassword = await bcrypt.hash(req.body.password, 10)
+        const updateUserPassword = await userservices.UpdateUserById(IsUser._id, { password: hashedpassword })
+        return res.status(StatusCode.OK).json({ message: "Updated", ok: updateUserPassword })
+    } catch (err) {
+        return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+
+    }
+}
+
+async function GetProfile(req, res) {
+    try {
+        return res.status(StatusCode.OK).json({ profile: req.userData })
+    } catch (err) {
+        return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+
+    }
+}
+
+
+
+module.exports = { GetUsers, GetUser, CreateUser, DeleteUser, UpdateUser, SendPasswordResetLink, ResetPassword, CheckPasswordResetUser, GetProfile }

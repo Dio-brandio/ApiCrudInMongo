@@ -1,4 +1,5 @@
-const User = require('../models/User')
+const User = require('../models/User');
+const nodemailer = require("nodemailer");
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -66,7 +67,7 @@ const UpdateUserById = async (userid, userinfo) => {
         const isUser = await GetUserById(userid);
 
         if (isUser !== null) {
-            const response = await User.findByIdAndUpdate(userid, userinfo)
+            await User.findByIdAndUpdate(userid, userinfo)
             return true;
         }
         return false;
@@ -76,4 +77,28 @@ const UpdateUserById = async (userid, userinfo) => {
         throw err;
     }
 }
-module.exports = { GetAllUsers, GetUserById, InsertUser, DeleteUserById, UpdateUserById, FindUserByEmail }
+
+const SendMail = async (recievermail, data) => {
+    let testAccount = await nodemailer.createTestAccount();
+    let transporter = nodemailer.createTransport({
+        host: "smtp.ethereal.email",
+        port: 587,
+        secure: false,
+        auth: {
+            user: testAccount.user,
+            pass: testAccount.pass,
+        },
+    });
+
+    let info = await transporter.sendMail({
+        from: '"Fred Foo 👻" <foo@example.com>', // sender address
+        to: recievermail, // list of receivers
+        subject: "Hello ✔", // Subject line
+        text:data, // plain text body
+        html: "<b>"+data+"</b>", // html body
+    });
+
+    return nodemailer.getTestMessageUrl(info)
+
+}
+module.exports = { GetAllUsers, GetUserById, InsertUser, DeleteUserById, UpdateUserById, FindUserByEmail, SendMail }
