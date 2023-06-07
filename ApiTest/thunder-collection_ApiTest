@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "CrudTask",
-    "dateExported": "2023-06-02T09:39:25.759Z",
+    "dateExported": "2023-06-06T10:11:08.316Z",
     "version": "1.1",
     "folders": [
         {
@@ -31,6 +31,13 @@
             "containerId": "",
             "created": "2023-06-02T09:20:55.519Z",
             "sortNum": 40000
+        },
+        {
+            "_id": "4357859a-8387-46f9-8846-9d9cc9a7ac7c",
+            "name": "Password Reset",
+            "containerId": "",
+            "created": "2023-06-06T06:36:17.009Z",
+            "sortNum": 50000
         }
     ],
     "requests": [
@@ -57,12 +64,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-06-01T08:56:28.619Z",
-            "modified": "2023-06-02T09:19:51.082Z",
+            "modified": "2023-06-06T09:15:57.253Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\":\"sanjay2@gmail.com\",\n  \"password\":123\n}",
+                "raw": "{\n  \"email\":\"sanjay3@gmail.com\",\n  \"password\":123456\n}",
                 "form": []
             },
             "tests": []
@@ -91,11 +98,11 @@
             "colId": "167c4479-f40b-4c23-8474-8053af865faa",
             "containerId": "d467b2e2-8ac7-4b01-9263-f2048629339e",
             "name": "FetchSingleUser",
-            "url": "localhost:4000/user/647827e4366c5ecce74c3edc",
+            "url": "localhost:4000/user/6478697d762eb9413210cf7f",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-06-01T04:46:14.905Z",
-            "modified": "2023-06-02T09:20:11.034Z",
+            "modified": "2023-06-06T09:36:23.343Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -180,9 +187,94 @@
             "method": "GET",
             "sortNum": 90000,
             "created": "2023-06-02T09:21:07.183Z",
-            "modified": "2023-06-02T09:27:52.839Z",
+            "modified": "2023-06-02T11:12:31.729Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7d5588a9-891d-482c-934f-9e6d98f8b3ea",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "df3fe93f-5a2c-4a42-8372-220368d55965",
+            "name": "NewMovie",
+            "url": "localhost:4000/movie/new",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-06-05T05:29:43.779Z",
+            "modified": "2023-06-05T05:38:34.125Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Jojo's Bizzare Adventure\",\n  \"release_date\": \"2013-10-06\",\n  \"actorid\": [\n    \"64799759f03b33902a18e9e1\",\n    \"64799799dda8aac74bd65dee\",\n    \"647d73e51e96f6e9661f4f94\"\n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a891310-cb49-4e91-8a0e-f7826bb3d99f",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "c3f485c7-69ba-4d97-9b4e-a0100a960a93",
+            "name": "GetMoviesOfActor",
+            "url": "localhost:4000/actor/movie/647d740c1e96f6e9661f4f95",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-06-05T05:45:38.828Z",
+            "modified": "2023-06-05T08:56:12.683Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e253b74d-b0e1-4257-aa52-84af6db41d71",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "c3f485c7-69ba-4d97-9b4e-a0100a960a93",
+            "name": "Multiple Actor",
+            "url": "localhost:4000/actor/movieofactors",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-06-05T09:20:22.515Z",
+            "modified": "2023-06-05T09:30:36.783Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"actors\": [\n    \n  ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "47e94737-053c-48bd-94ef-cea000221eea",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "4357859a-8387-46f9-8846-9d9cc9a7ac7c",
+            "name": "SendLink",
+            "url": "localhost:4000/user/passwordreset",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2023-06-06T06:36:25.313Z",
+            "modified": "2023-06-06T06:36:55.811Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4e960dbd-d8a8-459a-9c9f-13033c0e6faf",
+            "colId": "167c4479-f40b-4c23-8474-8053af865faa",
+            "containerId": "4357859a-8387-46f9-8846-9d9cc9a7ac7c",
+            "name": "ResetPassword",
+            "url": "http://localhost:4000/user/passwordreset/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmpheTNAZ21haWwuY29tIiwiaWF0IjoxNjg2MDQyNDA4fQ.3zR_sNclekBEZigT1R8xTexyI7nnQlNOkYuQRX-Z4aE",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2023-06-06T09:01:58.364Z",
+            "modified": "2023-06-06T09:07:43.653Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]

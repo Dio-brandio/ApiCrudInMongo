@@ -1,0 +1,1002 @@
+[
+    {
+        "name": "The Shawshank Redemption",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Godfather",
+        "release_date": "1972"
+    },
+    {
+        "name": "The Dark Knight",
+        "release_date": "2008"
+    },
+    {
+        "name": "The Godfather Part II",
+        "release_date": "1974"
+    },
+    {
+        "name": "12 Angry Men",
+        "release_date": "1957"
+    },
+    {
+        "name": "Schindler's List",
+        "release_date": "1993"
+    },
+    {
+        "name": "The Lord of the Rings: The Return of the King",
+        "release_date": "2003"
+    },
+    {
+        "name": "Pulp Fiction",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Lord of the Rings: The Fellowship of the Ring",
+        "release_date": "2001"
+    },
+    {
+        "name": "The Good, the Bad and the Ugly",
+        "release_date": "1966"
+    },
+    {
+        "name": "Forrest Gump",
+        "release_date": "1994"
+    },
+    {
+        "name": "Spider-Man: Across the Spider-Verse",
+        "release_date": "2023"
+    },
+    {
+        "name": "Fight Club",
+        "release_date": "1999"
+    },
+    {
+        "name": "The Lord of the Rings: The Two Towers",
+        "release_date": "2002"
+    },
+    {
+        "name": "Inception",
+        "release_date": "2010"
+    },
+    {
+        "name": "Star Wars: Episode V - The Empire Strikes Back",
+        "release_date": "1980"
+    },
+    {
+        "name": "The Matrix",
+        "release_date": "1999"
+    },
+    {
+        "name": "Goodfellas",
+        "release_date": "1990"
+    },
+    {
+        "name": "One Flew Over the Cuckoo's Nest",
+        "release_date": "1975"
+    },
+    {
+        "name": "Se7en",
+        "release_date": "1995"
+    },
+    {
+        "name": "It's a Wonderful Life",
+        "release_date": "1946"
+    },
+    {
+        "name": "Seven Samurai",
+        "release_date": "1954"
+    },
+    {
+        "name": "The Silence of the Lambs",
+        "release_date": "1991"
+    },
+    {
+        "name": "Saving Private Ryan",
+        "release_date": "1998"
+    },
+    {
+        "name": "City of God",
+        "release_date": "2002"
+    },
+    {
+        "name": "Interstellar",
+        "release_date": "2014"
+    },
+    {
+        "name": "Life Is Beautiful",
+        "release_date": "1997"
+    },
+    {
+        "name": "The Green Mile",
+        "release_date": "1999"
+    },
+    {
+        "name": "Star Wars: Episode IV - A New Hope",
+        "release_date": "1977"
+    },
+    {
+        "name": "Terminator 2: Judgment Day",
+        "release_date": "1991"
+    },
+    {
+        "name": "Back to the Future",
+        "release_date": "1985"
+    },
+    {
+        "name": "Spirited Away",
+        "release_date": "2001"
+    },
+    {
+        "name": "The Pianist",
+        "release_date": "2002"
+    },
+    {
+        "name": "Psycho",
+        "release_date": "1960"
+    },
+    {
+        "name": "Parasite",
+        "release_date": "2019"
+    },
+    {
+        "name": "Léon: The Professional",
+        "release_date": "1994"
+    },
+    {
+        "name": "The Lion King",
+        "release_date": "1994"
+    },
+    {
+        "name": "Gladiator",
+        "release_date": "2000"
+    },
+    {
+        "name": "American History X",
+        "release_date": "1998"
+    },
+    {
+        "name": "The Departed",
+        "release_date": "2006"
+    },
+    {
+        "name": "Whiplash",
+        "release_date": "2014"
+    },
+    {
+        "name": "The Prestige",
+        "release_date": "2006"
+    },
+    {
+        "name": "The Usual Suspects",
+        "release_date": "1995"
+    },
+    {
+        "name": "Casablanca",
+        "release_date": "1942"
+    },
+    {
+        "name": "Grave of the Fireflies",
+        "release_date": "1988"
+    },
+    {
+        "name": "Harakiri",
+        "release_date": "1962"
+    },
+    {
+        "name": "The Intouchables",
+        "release_date": "2011"
+    },
+    {
+        "name": "Modern Times",
+        "release_date": "1936"
+    },
+    {
+        "name": "Once Upon a Time in the West",
+        "release_date": "1968"
+    },
+    {
+        "name": "Cinema Paradiso",
+        "release_date": "1988"
+    },
+    {
+        "name": "Rear Window",
+        "release_date": "1954"
+    },
+    {
+        "name": "Alien",
+        "release_date": "1979"
+    },
+    {
+        "name": "City Lights",
+        "release_date": "1931"
+    },
+    {
+        "name": "Apocalypse Now",
+        "release_date": "1979"
+    },
+    {
+        "name": "Memento",
+        "release_date": "2000"
+    },
+    {
+        "name": "Django Unchained",
+        "release_date": "2012"
+    },
+    {
+        "name": "Indiana Jones and the Raiders of the Lost Ark",
+        "release_date": "1981"
+    },
+    {
+        "name": "WALL·E",
+        "release_date": "2008"
+    },
+    {
+        "name": "The Lives of Others",
+        "release_date": "2006"
+    },
+    {
+        "name": "Sunset Blvd.",
+        "release_date": "1950"
+    },
+    {
+        "name": "Paths of Glory",
+        "release_date": "1957"
+    },
+    {
+        "name": "Avengers: Infinity War",
+        "release_date": "2018"
+    },
+    {
+        "name": "The Shining",
+        "release_date": "1980"
+    },
+    {
+        "name": "The Great Dictator",
+        "release_date": "1940"
+    },
+    {
+        "name": "Witness for the Prosecution",
+        "release_date": "1957"
+    },
+    {
+        "name": "Spider-Man: Into the Spider-Verse",
+        "release_date": "2018"
+    },
+    {
+        "name": "Aliens",
+        "release_date": "1986"
+    },
+    {
+        "name": "American Beauty",
+        "release_date": "1999"
+    },
+    {
+        "name": "The Dark Knight Rises",
+        "release_date": "2012"
+    },
+    {
+        "name": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "release_date": "1964"
+    },
+    {
+        "name": "Inglourious Basterds",
+        "release_date": "2009"
+    },
+    {
+        "name": "Oldboy",
+        "release_date": "2003"
+    },
+    {
+        "name": "Coco",
+        "release_date": "2017"
+    },
+    {
+        "name": "Amadeus",
+        "release_date": "1984"
+    },
+    {
+        "name": "Toy Story",
+        "release_date": "1995"
+    },
+    {
+        "name": "Braveheart",
+        "release_date": "1995"
+    },
+    {
+        "name": "Das Boot",
+        "release_date": "1981"
+    },
+    {
+        "name": "Joker",
+        "release_date": "2019"
+    },
+    {
+        "name": "Avengers: Endgame",
+        "release_date": "2019"
+    },
+    {
+        "name": "Princess Mononoke",
+        "release_date": "1997"
+    },
+    {
+        "name": "Good Will Hunting",
+        "release_date": "1997"
+    },
+    {
+        "name": "Once Upon a Time in America",
+        "release_date": "1984"
+    },
+    {
+        "name": "Your Name.",
+        "release_date": "2016"
+    },
+    {
+        "name": "3 Idiots",
+        "release_date": "2009"
+    },
+    {
+        "name": "Singin' in the Rain",
+        "release_date": "1952"
+    },
+    {
+        "name": "High and Low",
+        "release_date": "1963"
+    },
+    {
+        "name": "Requiem for a Dream",
+        "release_date": "2000"
+    },
+    {
+        "name": "Capernaum",
+        "release_date": "2018"
+    },
+    {
+        "name": "Toy Story 3",
+        "release_date": "2010"
+    },
+    {
+        "name": "Star Wars: Episode VI - Return of the Jedi",
+        "release_date": "1983"
+    },
+    {
+        "name": "Come and See",
+        "release_date": "1985"
+    },
+    {
+        "name": "2001: A Space Odyssey",
+        "release_date": "1968"
+    },
+    {
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "release_date": "2004"
+    },
+    {
+        "name": "The Hunt",
+        "release_date": "2012"
+    },
+    {
+        "name": "Reservoir Dogs",
+        "release_date": "1992"
+    },
+    {
+        "name": "Lawrence of Arabia",
+        "release_date": "1962"
+    },
+    {
+        "name": "Citizen Kane",
+        "release_date": "1941"
+    },
+    {
+        "name": "M",
+        "release_date": "1931"
+    },
+    {
+        "name": "Ikiru",
+        "release_date": "1952"
+    },
+    {
+        "name": "North by Northwest",
+        "release_date": "1959"
+    },
+    {
+        "name": "The Apartment",
+        "release_date": "1960"
+    },
+    {
+        "name": "Vertigo",
+        "release_date": "1958"
+    },
+    {
+        "name": "Amélie",
+        "release_date": "2001"
+    },
+    {
+        "name": "Double Indemnity",
+        "release_date": "1944"
+    },
+    {
+        "name": "Hamilton",
+        "release_date": "2020"
+    },
+    {
+        "name": "A Clockwork Orange",
+        "release_date": "1971"
+    },
+    {
+        "name": "Full Metal Jacket",
+        "release_date": "1987"
+    },
+    {
+        "name": "Scarface",
+        "release_date": "1983"
+    },
+    {
+        "name": "Incendies",
+        "release_date": "2010"
+    },
+    {
+        "name": "Heat",
+        "release_date": "1995"
+    },
+    {
+        "name": "Up",
+        "release_date": "2009"
+    },
+    {
+        "name": "To Kill a Mockingbird",
+        "release_date": "1962"
+    },
+    {
+        "name": "The Sting",
+        "release_date": "1973"
+    },
+    {
+        "name": "A Separation",
+        "release_date": "2011"
+    },
+    {
+        "name": "Metropolis",
+        "release_date": "1927"
+    },
+    {
+        "name": "L.A. Confidential",
+        "release_date": "1997"
+    },
+    {
+        "name": "Die Hard",
+        "release_date": "1988"
+    },
+    {
+        "name": "Indiana Jones and the Last Crusade",
+        "release_date": "1989"
+    },
+    {
+        "name": "Taxi Driver",
+        "release_date": "1976"
+    },
+    {
+        "name": "Snatch",
+        "release_date": "2000"
+    },
+    {
+        "name": "Bicycle Thieves",
+        "release_date": "1948"
+    },
+    {
+        "name": "Like Stars on Earth",
+        "release_date": "2007"
+    },
+    {
+        "name": "1917",
+        "release_date": "2019"
+    },
+    {
+        "name": "Dangal",
+        "release_date": "2016"
+    },
+    {
+        "name": "Downfall",
+        "release_date": "2004"
+    },
+    {
+        "name": "Top Gun: Maverick",
+        "release_date": "2022"
+    },
+    {
+        "name": "For a Few Dollars More",
+        "release_date": "1965"
+    },
+    {
+        "name": "Batman Begins",
+        "release_date": "2005"
+    },
+    {
+        "name": "The Kid",
+        "release_date": "1921"
+    },
+    {
+        "name": "Some Like It Hot",
+        "release_date": "1959"
+    },
+    {
+        "name": "The Father",
+        "release_date": "2020"
+    },
+    {
+        "name": "All About Eve",
+        "release_date": "1950"
+    },
+    {
+        "name": "The Wolf of Wall Street",
+        "release_date": "2013"
+    },
+    {
+        "name": "Green Book",
+        "release_date": "2018"
+    },
+    {
+        "name": "Judgment at Nuremberg",
+        "release_date": "1961"
+    },
+    {
+        "name": "Ran",
+        "release_date": "1985"
+    },
+    {
+        "name": "The Truman Show",
+        "release_date": "1998"
+    },
+    {
+        "name": "Casino",
+        "release_date": "1995"
+    },
+    {
+        "name": "There Will Be Blood",
+        "release_date": "2007"
+    },
+    {
+        "name": "Pan's Labyrinth",
+        "release_date": "2006"
+    },
+    {
+        "name": "Unforgiven",
+        "release_date": "1992"
+    },
+    {
+        "name": "Shutter Island",
+        "release_date": "2010"
+    },
+    {
+        "name": "The Sixth Sense",
+        "release_date": "1999"
+    },
+    {
+        "name": "Jurassic Park",
+        "release_date": "1993"
+    },
+    {
+        "name": "A Beautiful Mind",
+        "release_date": "2001"
+    },
+    {
+        "name": "Yojimbo",
+        "release_date": "1961"
+    },
+    {
+        "name": "The Treasure of the Sierra Madre",
+        "release_date": "1948"
+    },
+    {
+        "name": "Monty Python and the Holy Grail",
+        "release_date": "1975"
+    },
+    {
+        "name": "No Country for Old Men",
+        "release_date": "2007"
+    },
+    {
+        "name": "Kill Bill: Vol. 1",
+        "release_date": "2003"
+    },
+    {
+        "name": "The Great Escape",
+        "release_date": "1963"
+    },
+    {
+        "name": "Rashomon",
+        "release_date": "1950"
+    },
+    {
+        "name": "The Thing",
+        "release_date": "1982"
+    },
+    {
+        "name": "Finding Nemo",
+        "release_date": "2003"
+    },
+    {
+        "name": "Spider-Man: No Way Home",
+        "release_date": "2021"
+    },
+    {
+        "name": "The Elephant Man",
+        "release_date": "1980"
+    },
+    {
+        "name": "Chinatown",
+        "release_date": "1974"
+    },
+    {
+        "name": "Raging Bull",
+        "release_date": "1980"
+    },
+    {
+        "name": "V for Vendetta",
+        "release_date": "2005"
+    },
+    {
+        "name": "Guardians of the Galaxy Vol. 3",
+        "release_date": "2023"
+    },
+    {
+        "name": "Gone with the Wind",
+        "release_date": "1939"
+    },
+    {
+        "name": "Dial M for Murder",
+        "release_date": "1954"
+    },
+    {
+        "name": "Inside Out",
+        "release_date": "2015"
+    },
+    {
+        "name": "Lock, Stock and Two Smoking Barrels",
+        "release_date": "1998"
+    },
+    {
+        "name": "Howl's Moving Castle",
+        "release_date": "2004"
+    },
+    {
+        "name": "The Secret in Their Eyes",
+        "release_date": "2009"
+    },
+    {
+        "name": "Three Billboards Outside Ebbing, Missouri",
+        "release_date": "2017"
+    },
+    {
+        "name": "Prisoners",
+        "release_date": "2013"
+    },
+    {
+        "name": "Trainspotting",
+        "release_date": "1996"
+    },
+    {
+        "name": "The Bridge on the River Kwai",
+        "release_date": "1957"
+    },
+    {
+        "name": "Fargo",
+        "release_date": "1996"
+    },
+    {
+        "name": "Warrior",
+        "release_date": "2011"
+    },
+    {
+        "name": "Gran Torino",
+        "release_date": "2008"
+    },
+    {
+        "name": "Catch Me If You Can",
+        "release_date": "2002"
+    },
+    {
+        "name": "My Neighbor Totoro",
+        "release_date": "1988"
+    },
+    {
+        "name": "Million Dollar Baby",
+        "release_date": "2004"
+    },
+    {
+        "name": "Children of Heaven",
+        "release_date": "1997"
+    },
+    {
+        "name": "The Gold Rush",
+        "release_date": "1925"
+    },
+    {
+        "name": "Blade Runner",
+        "release_date": "1982"
+    },
+    {
+        "name": "Klaus",
+        "release_date": "2019"
+    },
+    {
+        "name": "Harry Potter and the Deathly Hallows: Part 2",
+        "release_date": "2011"
+    },
+    {
+        "name": "12 release_dates a Slave",
+        "release_date": "2013"
+    },
+    {
+        "name": "Before Sunrise",
+        "release_date": "1995"
+    },
+    {
+        "name": "The Grand Budapest Hotel",
+        "release_date": "2014"
+    },
+    {
+        "name": "Ben-Hur",
+        "release_date": "1959"
+    },
+    {
+        "name": "On the Waterfront",
+        "release_date": "1954"
+    },
+    {
+        "name": "Gone Girl",
+        "release_date": "2014"
+    },
+    {
+        "name": "The General",
+        "release_date": "1926"
+    },
+    {
+        "name": "Wild Strawberries",
+        "release_date": "1957"
+    },
+    {
+        "name": "Barry Lyndon",
+        "release_date": "1975"
+    },
+    {
+        "name": "In the Name of the Father",
+        "release_date": "1993"
+    },
+    {
+        "name": "The Deer Hunter",
+        "release_date": "1978"
+    },
+    {
+        "name": "Hacksaw Ridge",
+        "release_date": "2016"
+    },
+    {
+        "name": "The Third Man",
+        "release_date": "1949"
+    },
+    {
+        "name": "The Wages of Fear",
+        "release_date": "1953"
+    },
+    {
+        "name": "Memories of Murder",
+        "release_date": "2003"
+    },
+    {
+        "name": "Sherlock Jr.",
+        "release_date": "1924"
+    },
+    {
+        "name": "Wild Tales",
+        "release_date": "2014"
+    },
+    {
+        "name": "Mr. Smith Goes to Washington",
+        "release_date": "1939"
+    },
+    {
+        "name": "Mad Max: Fury Road",
+        "release_date": "2015"
+    },
+    {
+        "name": "Mary and Max",
+        "release_date": "2009"
+    },
+    {
+        "name": "Dead Poets Society",
+        "release_date": "1989"
+    },
+    {
+        "name": "How to Train Your Dragon",
+        "release_date": "2010"
+    },
+    {
+        "name": "Monsters, Inc.",
+        "release_date": "2001"
+    },
+    {
+        "name": "The Seventh Seal",
+        "release_date": "1957"
+    },
+    {
+        "name": "Jaws",
+        "release_date": "1975"
+    },
+    {
+        "name": "Room",
+        "release_date": "2015"
+    },
+    {
+        "name": "The Big Lebowski",
+        "release_date": "1998"
+    },
+    {
+        "name": "Tokyo Story",
+        "release_date": "1953"
+    },
+    {
+        "name": "Ford v Ferrari",
+        "release_date": "2019"
+    },
+    {
+        "name": "The Passion of Joan of Arc",
+        "release_date": "1928"
+    },
+    {
+        "name": "Hotel Rwanda",
+        "release_date": "2004"
+    },
+    {
+        "name": "Rocky",
+        "release_date": "1976"
+    },
+    {
+        "name": "Ratatouille",
+        "release_date": "2007"
+    },
+    {
+        "name": "Platoon",
+        "release_date": "1986"
+    },
+    {
+        "name": "Spotlight",
+        "release_date": "2015"
+    },
+    {
+        "name": "Logan",
+        "release_date": "2017"
+    },
+    {
+        "name": "The Terminator",
+        "release_date": "1984"
+    },
+    {
+        "name": "Jai Bhim",
+        "release_date": "2021"
+    },
+    {
+        "name": "Rush",
+        "release_date": "2013"
+    },
+    {
+        "name": "Stand by Me",
+        "release_date": "1986"
+    },
+    {
+        "name": "Before Sunset",
+        "release_date": "2004"
+    },
+    {
+        "name": "Network",
+        "release_date": "1976"
+    },
+    {
+        "name": "Into the Wild",
+        "release_date": "2007"
+    },
+    {
+        "name": "The Wizard of Oz",
+        "release_date": "1939"
+    },
+    {
+        "name": "The Best release_dates of Our Lives",
+        "release_date": "1946"
+    },
+    {
+        "name": "The Exorcist",
+        "release_date": "1973"
+    },
+    {
+        "name": "La haine",
+        "release_date": "1995"
+    },
+    {
+        "name": "The Incredibles",
+        "release_date": "2004"
+    },
+    {
+        "name": "To Be or Not to Be",
+        "release_date": "1942"
+    },
+    {
+        "name": "Groundhog Day",
+        "release_date": "1993"
+    },
+    {
+        "name": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "release_date": "2003"
+    },
+    {
+        "name": "The Battle of Algiers",
+        "release_date": "1966"
+    },
+    {
+        "name": "The Grapes of Wrath",
+        "release_date": "1940"
+    },
+    {
+        "name": "My Father and My Son",
+        "release_date": "2005"
+    },
+    {
+        "name": "Hachi: A Dog's Tale",
+        "release_date": "2009"
+    },
+    {
+        "name": "Pather Panchali",
+        "release_date": "1955"
+    },
+    {
+        "name": "The Handmaiden",
+        "release_date": "2016"
+    },
+    {
+        "name": "Amores Perros",
+        "release_date": "2000"
+    },
+    {
+        "name": "Rebecca",
+        "release_date": "1940"
+    },
+    {
+        "name": "Cool Hand Luke",
+        "release_date": "1967"
+    },
+    {
+        "name": "The Sound of Music",
+        "release_date": "1965"
+    },
+    {
+        "name": "It Happened One Night",
+        "release_date": "1934"
+    },
+    {
+        "name": "The 400 Blows",
+        "release_date": "1959"
+    },
+    {
+        "name": "Persona",
+        "release_date": "1966"
+    },
+    {
+        "name": "Life of Brian",
+        "release_date": "1979"
+    },
+    {
+        "name": "The Help",
+        "release_date": "2011"
+    },
+    {
+        "name": "The Iron Giant",
+        "release_date": "1999"
+    },
+    {
+        "name": "Aladdin",
+        "release_date": "1992"
+    },
+    {
+        "name": "Drishyam",
+        "release_date": "2015"
+    }
+]

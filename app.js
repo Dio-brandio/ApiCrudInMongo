@@ -10,6 +10,7 @@ const actorroutes =require('./app/routes/actor.routes.js') ;
 const movieroutes =require('./app/routes/movie.routes.js') ;
 const exerciseroutes =require('./app/routes/exercise.routes.js') ;
 const { CheckCookie } = require('./app/middleware/authtoken.js');
+const { SeedMovie } = require('./config/seeder.js');
 require("./config/dbconfig.js");
 
 
@@ -29,6 +30,7 @@ app.use('/auth', authroutes);
 app.use('/movie', movieroutes);
 app.use('/exercise', exerciseroutes);
 
+SeedMovie()
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

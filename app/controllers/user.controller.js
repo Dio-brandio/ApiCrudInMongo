@@ -94,8 +94,9 @@ async function SendPasswordResetLink(req, res) {
         const IsUser = await userservices.FindUserByEmail(req.userData.email);
         if (IsUser === null) {
 
-            return res.status(StatusCode.InternalServer).json({ message: err.message, ok: false })
+            return res.status(StatusCode.BadRequest).json({ message:"BadRequest", ok: false })
         }
+        // eslint-disable-next-line no-undef
         const emailtoken = jwt.sign({ email: IsUser.email }, process.env.JWT_SECRET)
         const link = await userservices.SendMail(IsUser.email, `http://localhost:4000/user/passwordreset/${emailtoken}`);
         return res.status(StatusCode.OK).json({ link })
@@ -122,6 +123,7 @@ async function ResetPassword(req, res) {
 
         if (!emailtoken || emailtoken === null) return res.status(StatusCode.BadRequest).json({ message: "Badrequest", ok: false })
 
+        // eslint-disable-next-line no-undef
         const { email } = jwt.verify(emailtoken, process.env.JWT_SECRET)
 
         if (email !== req.userData.email) return res.status(StatusCode.Unauthorized).json({ message: "Unauthorized", ok: false })
