@@ -6,7 +6,7 @@ This project is a simple example of a Node.js application that uses MongoDB and 
 
 1. Open the project in Visual Studio Code and run `npm i` to install the dependencies.
 2. Create a `.env` file and add the following variables:DB_URL=mongodb://localhost:27017/my_database and JWT_SECRET=my_secret
-3. Run npm run start in the terminal to start the project.
+3. Run `npm run start` in the terminal to start the project.
 
 ## Features
 ### This project includes the following features:
