@@ -124,7 +124,7 @@ async function ResetPassword(req, res) {
         if (!emailtoken || emailtoken === null) return res.status(StatusCode.BadRequest).json({ message: "Badrequest", ok: false })
 
         // eslint-disable-next-line no-undef
-        const { email } = jwt.verify(emailtoken, process.env.JWT_SECRET)
+        const { email } = jwt.verify(emailtoken, process.env.JWT_SECRET).catch((e) => res.status(StatusCode.TokenInvalid).json({ message:"Not Available",ok:false}) )
 
 
         const IsUser = await userservices.FindUserByEmail(email);

@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 const ExerciseSchema = mongoose.Schema(
     {
-        bodyPart:String,
-        equipment:String,
-        gifUrl:String,
+        bodyPart:{type:String,required:true},
+        equipment:{type:String,required:true},
+        gifUrl:{type:String,required:true},
         id:Number,
-        name:String,
-        target:String,
+        name:{type:String,required:true},
+        target:{type:String,required:true},
     },
     { timestamps: true }
 );
@@ -17,9 +17,8 @@ ExerciseSchema.index({
     target: "text"
 })
 
-// ExerciseSchema.pre('find', function() {
-//     // console.log(this.schema ); // true
-//     // this.start = Date.now();
+// ExerciseSchema.pre('insert', function() {
+
 //   });
   
 module.exports = mongoose.model("Exercise", ExerciseSchema);

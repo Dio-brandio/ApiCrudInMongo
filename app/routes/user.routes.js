@@ -8,11 +8,6 @@ router.get('/profile', usercontroller.GetProfile)
 router.get('/:userid', usercontroller.GetUser)
 
 
-//password resets routes
-router.get('/passwordreset/:token', usercontroller.CheckPasswordResetUser)
-router.post('/passwordreset/:token', usercontroller.ResetPassword)
-router.post('/passwordreset', usercontroller.SendPasswordResetLink)
-
 
 //create new user
 router.post('/new', usercontroller.CreateUser)
