@@ -126,7 +126,6 @@ async function ResetPassword(req, res) {
         // eslint-disable-next-line no-undef
         const { email } = jwt.verify(emailtoken, process.env.JWT_SECRET)
 
-        if (email !== req.userData.email) return res.status(StatusCode.Unauthorized).json({ message: "Unauthorized", ok: false })
 
         const IsUser = await userservices.FindUserByEmail(email);
         if (IsUser === null) {
